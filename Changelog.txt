@@ -1,0 +1,4 @@
+02.03.2020
+Zapoznawanie się z dostępnymi materiałami
+03.09.2020
+Stworzenie rezpozytorium na GitHubie oraz napisanie licznika wraz z testbechem. Zaobserwowanie poprawnego działania
