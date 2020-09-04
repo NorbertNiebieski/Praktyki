@@ -22,24 +22,24 @@ module FSM(
         case(current_state)
             A: begin
                 if(control_1)   next_state <= B;
-                else            next_state <= B;
-                q <= 0;
+                else            next_state <= A;
+                q <= 1;
             end    
             B: begin
-                if(control_1)   next_state <= B;
-                else            next_state <= B;
-                q <= 1;
+                if(control_1)   next_state <= D;
+                else            next_state <= C;
+                q <= 2;
             end                       
             C: begin
                 if(control_1)   next_state <= B;
-                else            next_state <= B;  
-                q <= 2;  
+                else            next_state <= C;  
+                q <= 3;  
             end
                              
             D: begin
                 if(control_1)   next_state <= B;
-                else            next_state <= B;
-                q <= 3; 
+                else            next_state <= A;
+                q <= 4; 
             end
             
             default:  next_state <= A;
