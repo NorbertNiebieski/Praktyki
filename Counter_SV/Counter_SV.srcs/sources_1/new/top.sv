@@ -11,7 +11,7 @@ module counter(
     output reg[7:0] Q
 );
 
-    always @(posedge clk or posedge reset)
+    always_ff @(posedge clk or posedge reset)
     begin
         if (reset)
             Q <= 0;
