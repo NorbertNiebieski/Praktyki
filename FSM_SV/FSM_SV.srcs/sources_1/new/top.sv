@@ -3,7 +3,7 @@
 module FSM(
     input logic control_1,
     input logic clk,
-    input reset,
+    input logic reset,
     
     output logic [3:0] q
     );
@@ -12,10 +12,10 @@ module FSM(
     
     State current_state, next_state;
     
-    always @(posedge clk or posedge reset);
+    always_ff @(posedge clk)
     begin    
         if(reset)   current_state <= A;                
-        else    current_state <= next_state;
+        else        current_state <= next_state;
     end
     
     always_comb
@@ -46,4 +46,4 @@ module FSM(
             
         endcase
                 
-endmodule
+endmodule: FSM

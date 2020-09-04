@@ -26,4 +26,4 @@ module counter(
                         Q <= Q - 1;
     end
            
-endmodule
+endmodule: counter

@@ -28,9 +28,7 @@ module counter_test;
         count_up_or_down = 1;
         reset = 1;
         data <= 8'b00001100;
-        // Will be applied on negedge of clk!
         #5 reset  <= 0;
-        // Will be applied 4ns after the clk!
         #5 stop_start <= 1;
         #10 count_up_or_down   <= 0;
         #50 count_up_or_down   <= 1;
