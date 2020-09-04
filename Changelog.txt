@@ -2,3 +2,5 @@
 Zapoznawanie się z dostępnymi materiałami
 03.09.2020
 Stworzenie rezpozytorium na GitHubie oraz napisanie licznika wraz z testbechem. Zaobserwowanie poprawnego działania
+04.09.2020
+Napisanie FSM wraz z tesbechem, zasymulowanie działania i obserwacja poprawnej pracy
