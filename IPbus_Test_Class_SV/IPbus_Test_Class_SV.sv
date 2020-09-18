@@ -4,14 +4,14 @@ interface IPbusInterface( 	input  ipb_in,
 	initial                            
 	begin
 
-		ipb_out.ipb_wdata = 0'b1;
-		ipb_out.ipb_addr = 0'b1;
-		ipb_out.ipb_write = 0'b1;
-		ipb_out.ipb_strobe = 0'b1;
-		ipb_in.data = 0'b1;
-		ipb_in.ipb_rdata = 0'b1;
-		ipb_in.ipb_ack = 0'b1;
-		ipb_in.ipb_err = 0'b1;
+		ipb_out.ipb_wdata = 1'b1;
+		ipb_out.ipb_addr = 1'b1;
+		ipb_out.ipb_write = 1'b1;
+		ipb_out.ipb_strobe = 1'b1;
+		ipb_in.data = 1'b1;
+		ipb_in.ipb_rdata = 1'b1;
+		ipb_in.ipb_ack = 1'b1;
+		ipb_in.ipb_err = 1'b1;
 
 	end
                            
