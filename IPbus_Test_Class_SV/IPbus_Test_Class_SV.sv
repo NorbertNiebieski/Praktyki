@@ -1,5 +1,5 @@
 interface IPbusInterface( 	input  ipb_in,
-											output  ipb_out);
+				output  ipb_out);
 	
 	initial                            
 	begin
@@ -22,11 +22,10 @@ class IPbusTestClass;
 
 	local virtual IPbusInterface  IPbusInterface1;
  
-    task assignInterface( virtual IPbusInterface  IPbusInterface1);
+	task assignInterface( virtual IPbusInterface  IPbusInterface1);
         
 		this.IPbusInterface1 = IPbusInterface1;    
     
 	endtask: assignInterface
   
-
 endclass: IPbusTestClass
