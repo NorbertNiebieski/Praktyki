@@ -28,7 +28,7 @@ class IPbusTestClass;
     
 	endtask: assignInterface
 	
-	function void write (string filepath, string text)
+	function void write (string filepath, string text); 
 		
 		int fileDescriptor;
 		
@@ -43,7 +43,7 @@ class IPbusTestClass;
 		
 	endfunction
 	
-		function string read(string filepath)
+	function string read(string filepath);
 		
 		int fileDescriptor;
 		string line, text;
@@ -60,7 +60,7 @@ class IPbusTestClass;
 		
 		$fclose(fileDescriptor);
 		
-		return text
+		return text;
 			
 	endfunction
   
