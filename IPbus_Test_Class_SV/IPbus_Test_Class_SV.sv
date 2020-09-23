@@ -33,11 +33,12 @@ class IPbusTestClass;
 		int fileDescriptor;
 		
 		fileDescriptor = $fopen(filepath, "w");
-		if (fd)  $display("File was opened successfully : %0d", fileDescriptor);
-		else     $display("File was NOT opened successfully : %0d", ffileDescriptor);
+		if (fileDescriptor)  $display("File was opened successfully : %0d", fileDescriptor);
+		else     $display("File was NOT opened successfully : %0d", fileDescriptor);
 		
+
 		$fdisplay (fileDescriptor, text);
-		
+
 		$fclose(fileDescriptor);
 		
 	endfunction
@@ -48,11 +49,11 @@ class IPbusTestClass;
 		string line, text;
 		
 		fileDescriptor = $fopen(filepath, "r");
-		if (fd)  $display("File was opened successfully : %0d", fileDescriptor);
-		else     $display("File was NOT opened successfully : %0d", ffileDescriptor);
+		if (fileDescriptor)  $display("File was opened successfully : %0d", fileDescriptor);
+		else     $display("File was NOT opened successfully : %0d", fileDescriptor);
 		
-		while (!$feof(fd)) begin
-		$fgets(line, fd);
+		while (!$feof(fileDescriptor)) begin
+		$fgets(line, fileDescriptor);
 		text = {text, line};
 		$display ("Line: %s", line);
 		end
