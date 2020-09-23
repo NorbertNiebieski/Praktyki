@@ -65,3 +65,21 @@ class IPbusTestClass;
 	endfunction
   
 endclass: IPbusTestClass
+
+
+module TestingIPbusTestClassModule;
+    
+	initial begin
+  
+    IPbusTestClass o1; 
+    
+    string filepath, text;
+    filepath = "C:\Users\Norbert\Vivado\project_7\project_7.srcs\sim_1\new\test.txt";
+    text = "testowanie";
+	
+    o1.write(filepath,text);
+    $display(o1.read(filepath));
+    
+    end
+endmodule: TestingIPbusTestClassModule
+
