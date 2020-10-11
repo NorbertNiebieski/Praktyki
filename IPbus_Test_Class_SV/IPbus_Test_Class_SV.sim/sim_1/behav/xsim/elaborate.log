@@ -1,0 +1,21 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 146e920e4ba949529d988636aef6f567 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 34 for port 'ipb_in' [C:/Users/Norbert/Vivado/Praktyki/IPbus_Test_Class_SV/IPbus_Test_Class_SV.srcs/sim_1/new/TB.sv:9]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 66 for port 'ipb_out' [C:/Users/Norbert/Vivado/Praktyki/IPbus_Test_Class_SV/IPbus_Test_Class_SV.srcs/sim_1/new/TB.sv:10]
+WARNING: [VRFC 10-3363] function 'assign_interface' has no return value assignment [../../../../IPbus_Test_Class_SV.srcs/sim_1/new/IPbusTestClass.svh:38]
+WARNING: [VRFC 10-3597] non-void function 'assign_interface' called as a task without void casting [C:/Users/Norbert/Vivado/Praktyki/IPbus_Test_Class_SV/IPbus_Test_Class_SV.srcs/sim_1/new/TB.sv:20]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ram_sv
+WARNING: [XSIM 43-3373] "../../../../IPbus_Test_Class_SV.srcs/sim_1/new/IPbusTestClass.svh" Line 89. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.IPbusInterface
+Compiling module xil_defaultlib.ipbus_ram
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_behav
